@@ -65,9 +65,9 @@
     
     <tr onmouseout="greedypolicy_stop()" onmouseover="greedypolicy_start()">
       <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
-        <div id='greedypolicy' class='hidden'><img width="200" src="images/COVID_image.jpg"></div>
+        <div id='greedypolicy' class='hidden'><img width="200" src="images/COVID_image.png"></div>
         <div id='nogreedypolicy'>
-          <a href=""><img width="200" src="images/COVID_image.jpg"></a>
+          <a href=""><img width="200" src="images/COVID_image.png"></a>
         </div>
         <script type="text/javascript">
           function greedypolicy_start() {
@@ -109,9 +109,9 @@
 
     <tr onmouseout="depth_stop()" onmouseover="depth_start()">
       <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
-        <div id='depth' class='hidden'><img width="200" src="images/ESCC_image.jpg"></div>
+        <div id='depth' class='hidden'><img width="200" src="images/ESCC_image.png"></div>
         <div id='nodepth'>
-          <a href=""><img width="200" src="images/ESCC_image.jpg"></a>
+          <a href=""><img width="200" src="images/ESCC_image.png"></a>
         </div>
         <script type="text/javascript">
           function depth_start() {
@@ -139,19 +139,19 @@
         <a href="images/ESCC_thesis.pdf">pdf</a> /
         <a href="data/baek_ESCC.txt">citation</a> 
         <p></p>
-        <p>
-          Conducted a retrospective observational study on lymphatic metastases patterns in esophageal squamous cell carcinoma (ESCC) as the first author under the supervision of Dr. Seongyong Park and Dr. Kyunga Kim \\
-          ✓ Performed network analyses to elucidate the complex lymphatic metastases patterns in ESCC patients \\
-          ✓ Implemented association rule mining to quantify the important associations among metastasized lymph nodes \\
-        </p>
+        <ul class="bullet-point">
+          <li>Conducted a retrospective observational study on lymphatic metastases patterns in esophageal squamous cell carcinoma (ESCC) as the first author under the supervision of Dr. Seongyong Park and Dr. Kyunga Kim</li>
+          <li>Performed network analyses to elucidate the complex lymphatic metastases patterns in ESCC patients</li>
+          <li>Implemented association rule mining to quantify the important associations among metastasized lymph nodes</li>
+        </ul>
       </td>
     </tr>
 
     <tr onmouseout="redteam_stop()" onmouseover="redteam_start()">
       <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
-        <div id='redteam' class='hidden'><img width="200" src="images/Sepsis_image.jpg"></div>
+        <div id='redteam' class='hidden'><img width="200" src="images/Sepsis_image.png"></div>
         <div id='noredteam'>
-          <a href=""><img width="200" src="images/Sepsis_image.jpg"></a>
+          <a href=""><img width="200" src="images/Sepsis_image.png"></a>
         </div>
         <script type="text/javascript">
           function redteam_start() {
@@ -180,15 +180,169 @@
         <a href="https://github.com/Baeksw98/GNUCH_Sepsis_Research">code</a> /
         <a href="data/baek_Sepsis.txt">citation</a>
         <p></p>
-        <p>
-          Conducted a retrospective cross-sectional study to develop a multivariable logistic regression-based mortality prediction system for severe patients
-          with or without bacteremic sepsis as the first author under the supervision of Dr. Seungjun Lee \\
-          ✓ Collected clinical and laboratory biomarkers from 300+ severe patients by thoroughly investigating electronic health records \\
-          ✓ Utilized Kaplan-Meier curve to visualize the patient survival probabilities within a 30-day hospitalized period \\
-        </p>
+        <ul class="bullet-point">
+          <li>Conducted a retrospective cross-sectional study to develop a multivariable logistic regression-based mortality prediction system for severe patients with or without bacteremic sepsis as the first author under the supervision of Dr. Seungjun Lee</li>
+          <li>Collected clinical and laboratory biomarkers from 300+ severe patients by thoroughly investigating electronic health records</li>
+          <li>Utilized Kaplan-Meier curve to visualize the patient survival probabilities within a 30-day hospitalized period</li>
+        </ul>
       </td>
     </tr>
 
+
+    <tr>
+      <td colspan="2">
+        <heading>Research Experience</heading>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <ul class="bullet-point">
+          <li>
+            <strong>Department of Anesthesiology and Pain Medicine, Seoul National University Hospital, Seoul, Korea</strong><br>
+            Medical Data Scientist, 01/2024-07/2024<br>
+            Conducted a retrospective study on developing an offline reinforcement learning-based real-time alert system for mechanical ventilators under the supervision of Dr. Hyunkyu Yoon.<br>
+            ✓ Preprocessed ~70M intraoperative biosignal data points extracted from the surgical data of 40K+ patients for model training and validation
+          </li>
+          <li>
+            <strong>Medical AI Research Center, Samsung Medical Center, Seoul, Korea</strong><br>
+            Medical Data Scientist, 08/2022-12/2023<br>
+            Conducted a government-funded ($9M), multicenter (19 hospitals), retrospective study to develop and validate a ML-based Robust and Interpretable Early Triaging System (RIETS) for predicting COVID-19 severity progression as the first author under the supervision of Dr. Kyunga Kim.<br>
+            ✓ Established RIETS through comprehensively evaluating all possible combinations of candidate feature subsets and modeling algorithms<br>
+            ✓ Utilized a tree-based unsupervised learning technique (i.e. DDRTree) to cluster and characterize patients based on the features in RIETS<br>
+            ✓ Applied Shapley Additive exPlanations (SHAP) to interpret the marginal contributions of individual features in RIETS<br>
+            ✓ Deployed RIETS as a web-based open-source application (<a href="https://riets-web.azurewebsites.net/">https://riets-web.azurewebsites.net/</a>)
+          </li>
+          <li>
+            <strong>Department of Laboratory Medicine, Gyeongsang National University Changwon Hospital, Changwon, Korea</strong><br>
+            Lead Researcher, 05/2021-12/2021<br>
+            Conducted a retrospective cross-sectional study to develop a multivariable logistic regression-based mortality prediction system for severe patients with or without bacteremic sepsis as the first author under the supervision of Dr. Seungjun Lee.<br>
+            ✓ Collected clinical and laboratory biomarkers from 300+ severe patients by thoroughly investigating electronic health records<br>
+            ✓ Utilized Kaplan-Meier curve to visualize the patient survival probabilities within a 30-day hospitalized period
+          </li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <heading>Teaching Experience</heading>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <ul class="bullet-point">
+          <li>
+            <strong>Institute of Convergence Medicine with Innovative Technology, Seoul National University Hospital, Seoul, Korea</strong><br>
+            AI Research Seminar Speaker, 01/2024-05/2024<br>
+            Expanded modeling options in approaching healthcare AI research for 30+ researchers by introducing 10+ state-of-the-art transformer-based text and vision models.
+          </li>
+          <li>
+            <strong>Kim Study Online Platform, Seoul, Korea</strong><br>
+            AI/ML Programming Lecturer, 07/2023-Current<br>
+            Designed and implemented a customized curriculum (introductory and advanced programming techniques, explainable AI, data mining and analysis techniques, and data visualization methods) for 20+ students, primarily college graduates and MS/PhD students.<br>
+            ✓ Guided 4 students into research roles in AI/ML fields by mentoring them with real-world case studies and hands-on projects
+          </li>
+          <li>
+            <strong>Research Institute for Future Medicine, Samsung Medical Center, Seoul, Korea</strong><br>
+            Healthcare AI Instructor, 04/2023-11/2023<br>
+            Introduced 5+ prevalently used healthcare AI tools to medical doctors and researchers by conducting monthly AI seminars.<br>
+            ✓ Contributed to the increase in thesis completion rate by thoroughly explaining the TRIPOD guideline, which details approaches for conducting appropriate statistical analysis of clinical data<br>
+            ✓ Facilitated the initiation of research collaboration between the hospital and the AI division of Samsung Electronics by providing feedback on their ongoing healthcare AI projects
+          </li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <heading>Leadership Experience</heading>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <ul class="bullet-point">
+          <li>
+            <strong>Republic of Korea Air Force (ROKAF), 5th Air Mobility Wing, Pusan, Korea</strong><br>
+            Squad Leader, Driver Instructor, 08/2018-06/2020<br>
+            Served as the Wing Commander's personal driver to fulfill mandatory military duty.<br>
+            ✓ Created standard operating procedures to reduce operational conflicts between offices and units as a squad leader<br>
+            ✓ Instructed 70+ soldiers for their preparation of active duty operations
+          </li>
+          <li>
+            <strong>Tie-Off Organization – Entrepreneurship Study Group, Babson Park, MA</strong><br>
+            Team Leader, 09/2017-05/2018<br>
+            Performed benchmark analyses to test the feasibility of a theoretical business model within the prospective US market.<br>
+            ✓ Organized prototype fairs at five nearby colleges (Wellesley College, Olin College of Engineering, Brandeis University, Boston College, Babson College) to sell products and raised ~$8K in revenue<br>
+            ✓ Generated a predictive model to calculate break-even time and quantity to maximize the operational efficiency based on collected data
+          </li>
+          <li>
+            <strong>FreshFeet – College Start-up, Babson Park, MA</strong><br>
+            Co-Founder, Chief Technology Officer, 09/2016-05/2017<br>
+            Led the development and implementation of the business model using data analytics to identify market trends and customer preferences.<br>
+            ✓ Initiated three on-campus prototype fairs to sell functional wearables and raised ~$3K in revenue<br>
+            ✓ Coordinated panel sessions with industry experts to refine the business revenue model<br>
+            ✓ Leveraged data-driven insights to optimize financial projections and growth strategies
+          </li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <heading>Academic Services</heading>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <ul class="bullet-point">
+          <li>
+            Statistical Peer Reviewer for original articles and research letters, JAMA Network Open, 01/2024-Current
+          </li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <heading>Conference Presentations</heading>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <ul class="bullet-point">
+          <li>
+            Oral Spotlight & Poster Presentation, "Early Triaging Support System for Hospitalized COVID-19 Patients: a Machine-Learning based Severity Prediction Model using Nationwide Multi-Center Real World Data", American Society for Microbiology (ASM) 2023, Houston, USA, June 2023
+          </li>
+          <li>
+            Poster Presentation, "Clinical Characteristics and Laboratory Biomarkers in ICU-admitted Septic Patients with and without Bacteremia: A Predictive Analysis", American Society for Microbiology (ASM) 2022, Washington, D.C., USA, June 2022
+          </li>
+          <li>
+            Oral Presentation, "Clinical Characteristics and Laboratory Biomarkers in ICU-admitted Septic Patients with and without Bacteremia: A Predictive Analysis", European Congress of Clinical Microbiology and Infectious Diseases (ECCMID) 2022, Lisbon, Portugal, April 2022
+          </li>
+          <li>
+            Poster Presentation, "Clinical performance evaluation of 'Boditech Quick COVID-19 Ag' test that can detect SARS-CoV-2 specific antigen in saliva from COVID-19 suspected patients", Laboratory Medicine Congress & Exhibition (LMCE) 2021, Online (Virtual Conference), September 2021
+          </li>
+        </ul>
+      </td>
+    </tr>
+
+    <tr>
+      <td colspan="2">
+        <heading>Patents</heading>
+      </td>
+    </tr>
+    <tr>
+      <td colspan="2">
+        <ul class="bullet-point">
+          <li>
+            Baek, S., Kim, K. “Apparatus and method for predicting patient prognosis using machine learning model”. Korea Patent Pending: No. 10-2023-0129662. 26 Sep. 2023
+          </li>
+          <li>
+            Baek, S., Kim, K., Park, S.Y. “Visualization method for lymph node metastases in esophageal cancer and apparatus”. Korea Patent Pending: No. 10-2024-0002349. 05 Jan. 2024
+          </li>
+        </ul>
+      </td>
+    </tr>
   </table>
 </body>
 </html>
