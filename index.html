@@ -39,6 +39,14 @@
   img.profile {
     width: 130px;
   }
+  .bullet-point {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+  }
+  .bullet-point li {
+    margin-bottom: 10px;
+  }
 </style>
 <body>
   <table>
@@ -97,13 +105,12 @@
         <a href="data/baek_COVID.txt">citation</a> /
         <a href="https://riets-web.azurewebsites.net/">online application</a> /
         <p></p>
-        <p>
-          Conducted a government funded ($9M), multicenter (19 hospitals), retrospective study to develop and validate a ML-based Robust and Interpretable
-          Early Triaging System (RIETS) for predicting COVID-19 severity progression as the first author under the supervision of Dr. Kyunga Kim \\
-          ✓ Established RIETS through comprehensively evaluating all possible combinations of candidate feature subsets and modeling algorithms \\
-          ✓ Utilized a tree-based unsupervised learning technique (i.e. DDRTree) to cluster and characterize patients based on the features in RIETS \\
-          ✓ Applied Shapley Additive exPlanations (SHAP) to interpret the marginal contributions of individual features in RIETS \\
-        </p>
+        <ul class="bullet-point">
+          <li>Conducted a government funded ($9M), multicenter (19 hospitals), retrospective study to develop and validate a ML-based Robust and Interpretable Early Triaging System (RIETS) for predicting COVID-19 severity progression as the first author under the supervision of Dr. Kyunga Kim</li>
+          <li>Established RIETS through comprehensively evaluating all possible combinations of candidate feature subsets and modeling algorithms</li>
+          <li>Utilized a tree-based unsupervised learning technique (i.e. DDRTree) to cluster and characterize patients based on the features in RIETS</li>
+          <li>Applied Shapley Additive exPlanations (SHAP) to interpret the marginal contributions of individual features in RIETS</li>
+        </ul>
       </td>
     </tr>
 
@@ -187,7 +194,6 @@
         </ul>
       </td>
     </tr>
-
 
     <tr>
       <td colspan="2">
