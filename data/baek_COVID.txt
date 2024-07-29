@@ -1,0 +1,5 @@
+Baek S, Jeong Y, Kim Y, Kim J, Kim J, Kim E, Lim J, Kim J, Kim Z, Kim K, Chung M
+Development and Validation of a Robust and Interpretable Early Triaging Support System for Patients Hospitalized With COVID-19: Predictive Algorithm Modeling and Interpretation Study
+J Med Internet Res 2024;26:e52134
+URL: https://www.jmir.org/2024/1/e52134
+DOI: 10.2196/52134

@@ -1,327 +1,194 @@
 <!DOCTYPE HTML>
-<html lang="en"><head><meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
-
-  <title>Deokjae Lee</title>
-  
-  <meta name="author" content="Deokjae Lee">
+<html lang="en">
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+  <title>Sang Won Baek</title>
+  <meta name="author" content="Sang Won Baek">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <style>
-  body{ background-color:#272822}
+  body {
+    background-color: #272822;
+    color: #ffffff;
+    font-family: Arial, sans-serif;
+  }
+  a {
+    color: #1e90ff;
+    text-decoration: none;
+  }
+  a:hover {
+    text-decoration: underline;
+  }
+  table {
+    width: 100%;
+    max-width: 800px;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+    margin: 0 auto;
+  }
+  td {
+    padding: 20px;
+    vertical-align: middle;
+  }
+  heading {
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  img.profile {
+    width: 130px;
+  }
 </style>
 <body>
-  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-    <tr style="padding:0px">
-      <td style="padding:0px">
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr style="padding:0px">
-            <td style="padding:2.5%;width:80%;vertical-align:middle">
-              <p style="text-align:center">
-                <name>Deokjae Lee</name>
-              </p>
-              <p>
-                I am a fourth-year Ph.D. student in Computer Science and Engineering at Seoul National University, advised by <a href="https://mllab.snu.ac.kr/hyunoh">Hyun Oh Song</a>. I previously graduated from Seoul National University in 2020 with a B.S. in Mathematical Science. My research interests are combinatorial optimization and efficient machine learning. Also, I’m interested in natural language processing (NLP) and reinforcement learning (RL). 
-
-                I visited <a href="https://kyunghyuncho.me/">Prof. Kyunghyun Cho</a>'s group at New York University (NYU) from 2023/09 to 2024/02, working on active learning algorithms for combinatorial problems.
-              </p>
-              <p style="text-align:center">
-                <a href="mailto:bdbj@mllab.snu.ac.kr">Email</a> &nbsp/&nbsp
-                <!--<a>CV</a> &nbsp/&nbsp-->
-                <a href="https://scholar.google.com/citations?user=G8JsnZAAAAAJ&hl=ko">Google Scholar</a> &nbsp/&nbsp
-                <a href="https://github.com/badeok0716/">Github</a> &nbsp/&nbsp
-                <a href="images/deokjae_lee_CV.pdf">CV</a>
-              </p>
-            </td>
-            <td style="padding:2.5%;width:23%;max-width:23%">
-              <img width="130" alt="profile photo" src="images/deokjae.jpg">
-            </td>
-          </tr>
-        </tbody></table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Research</heading>
-            </td>
-          </tr>
-        </tbody></table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:25%;vertical-align:middle"> 
-              <heading>Publications</heading>
-            </td>  
-          </tr>
-
-          <tr onmouseout="greedypolicy_stop()" onmouseover="greedypolicy_start()">
-            <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
-              <div id='greedypolicy' class='hidden'><img width="200" src="images/lee24icml.png"></div>
-              <div id='nogreedypolicy'>
-                <a href=""><img width="200" src="images/lee24icml.png"></a>
-              </div>
-              <script type="text/javascript">
-                function greedypolicy_start() {
-                  document.getElementById('greedypolicy').style.display = 'inline';
-                  document.getElementById('nogreedypolicy').style.display = 'none';
-                }
-
-                function greedypolicy_stop() {
-                  document.getElementById('greedypolicy').style.display = 'none';
-                  document.getElementById('nogreedypolicy').style.display = 'inline';
-                }
-                greedypolicy_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:70%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2406.14876">
-                <papertitle>Training Greedy Policy for Proposal Batch Selection in Expensive Multi-Objective Combinatorial Optimization</papertitle>
-              </a>
-              <br>
-              <strong>Deokjae Lee</strong>,
-              <a href="https://mllab.snu.ac.kr/hyunoh/">Hyun Oh Song</a>,
-              <a href="https://kyunghyuncho.me/">Kyunghyun Cho</a>
-              <br>
-              <em>International Conference on Machine Learning (ICML)</em>, 2024
-              <br>
-              <a href="https://arxiv.org/abs/2406.14876">paper</a> /
-              <!-- <a href="images/lee23acl_poster.pdf">poster</a> / -->
-              <a href="https://github.com/snu-mllab/GreedyPolicyForMOCO">code</a> /
-              <a href="data/lee24icml.txt">bibtex</a>
-              <p></p>
-              <p>  We propose a novel subset selection method which trains a greedy policy to solve marginal gain maximization problems concurrently.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="depth_stop()" onmouseover="depth_start()">
-            <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
-              <div id='depth' class='hidden'><img width="200" src="images/kim2023efficient.gif"></div>
-              <div id='nodepth'>
-                <a href=""><img width="200" src="images/kim2023efficient.gif"></a>
-              </div>
-              <script type="text/javascript">
-                function depth_start() {
-                  document.getElementById('depth').style.display = 'inline';
-                  document.getElementById('nodepth').style.display = 'none';
-                }
-
-                function depth_stop() {
-                  document.getElementById('depth').style.display = 'none';
-                  document.getElementById('nodepth').style.display = 'inline';
-                }
-                depth_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:70%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2301.12187">
-                <papertitle>Efficient Latency-Aware CNN Depth Compression via Two-Stage Dynamic Programming</papertitle>
-              </a>
-              <br>
-              Jinuk Kim*,
-              Yeonwoo Jeong*,
-              <strong>Deokjae Lee</strong>,
-              <a href="https://mllab.snu.ac.kr/hyunoh/">Hyun Oh Song</a>
-              <br>
-              <em>International Conference on Machine Learning (ICML)</em>, 2023
-              <br>
-              <a href="https://arxiv.org/abs/2301.12187">paper</a> /
-              <!-- <a href="images/lee23acl_poster.pdf">poster</a> / -->
-              <a href="https://github.com/snu-mllab/Efficient-CNN-Depth-Compression">code</a> /
-              <a href="data/kim2023efficient.txt">bibtex</a>
-              <p></p>
-              <p> We propose a subset selection optimization problem for depth compression which can be efficiently solved via two-stage dynamic programming.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="redteam_stop()" onmouseover="redteam_start()">
-            <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
-              <div id='redteam' class='hidden'><img width="200" src="images/lee23acl.png"></div>
-              <div id='noredteam'>
-                <a href=""><img width="200" src="images/lee23acl.png"></a>
-              </div>
-              <script type="text/javascript">
-                function redteam_start() {
-                  document.getElementById('redteam').style.display = 'inline';
-                  document.getElementById('noredteam').style.display = 'none';
-                }
-
-                function redteam_stop() {
-                  document.getElementById('redteam').style.display = 'none';
-                  document.getElementById('noredteam').style.display = 'inline';
-                }
-                redteam_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:70%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2305.17444">
-                <papertitle>Query-Efficient Black-Box Red Teaming via Bayesian Optimization</papertitle>
-              </a>
-              <br>
-              <strong>Deokjae Lee</strong>,
-              JunYeong Lee,
-              Jung-Woo Ha,
-              Jin-Hwa Kim,
-              Sang-Woo Lee,
-              Hwaran Lee,
-              <a href="https://mllab.snu.ac.kr/hyunoh/">Hyun Oh Song</a>
-              <br>
-              <em>Annual Meeting of the Association for Computational Linguistics (ACL)</em>, 2023
-              <br>
-              <a href="https://arxiv.org/abs/2305.17444">paper</a> /
-              <a href="images/lee23acl_poster.pdf">poster</a> /
-              <a href="https://github.com/snu-mllab/Bayesian-Red-Teaming">code</a> /
-              <a href="data/lee23acl.txt">bibtex</a>
-              <p></p>
-              <p> We propose a novel query-efficient red teaming method, namely Bayesian red teaming (BRT), which identifies failures of black-box generative models by choosing and editing user inputs with GP surrogate models.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="text_stop()" onmouseover="text_start()">
-            <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
-              <div id='text' class='hidden'><img width="200" src="images/lee22icml2.gif"></div>
-              <div id='notext'>
-                <a href=""><img width="200" src="images/lee22icml2.gif"></a>
-              </div>
-              <script type="text/javascript">
-                function text_start() {
-                  document.getElementById('text').style.display = 'inline';
-                  document.getElementById('notext').style.display = 'none';
-                }
-
-                function text_stop() {
-                  document.getElementById('text').style.display = 'none';
-                  document.getElementById('notext').style.display = 'inline';
-                }
-                text_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:70%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2206.08575">
-                <papertitle>Query-Efficient and Scalable Black-Box Adversarial Attacks on Discrete Sequential Data via Bayesian Optimization</papertitle>
-              </a>
-              <br>
-              <strong>Deokjae Lee</strong>,
-              Seungyong Moon,
-              Junhyeok Lee,
-              <a href="https://mllab.snu.ac.kr/hyunoh/">Hyun Oh Song</a>
-              <br>
-              <em>International Conference on Machine Learning (ICML)</em>, 2022
-              <br>
-              <a href="https://arxiv.org/abs/2206.08575">paper</a> /
-              <a href="images/lee22icml_poster.pdf">poster</a> /
-              <a href="https://github.com/snu-mllab/discreteblockbayesattack">code</a> /
-              <a href="data/lee22icml.txt">bibtex</a>
-              <p></p>
-              <p>Crafting adversarial examples against language models is challenging due to its discrete nature and dynamic input size. We tackle these problems using Bayesian optimization and develop a query-efficient black-bax adversarial attack against various types of models.</p>
-            </td>
-          </tr>
-
-          <tr onmouseout="attack_stop()" onmouseover="attack_start()">
-            <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
-              <div id='attack' class='hidden'><img width="200" src="images/jeong22icml.png"></div>
-              <div id='noattack'><img width="200" src="images/jeong22icml.png"></div>
-              <script type="text/javascript">
-                function attack_start() {
-                  document.getElementById('attack').style.display = 'inline';
-                  document.getElementById('noattack').style.display = 'none';
-                }
-
-                function attack_stop() {
-                  document.getElementById('attack').style.display = 'none';
-                  document.getElementById('noattack').style.display = 'inline';
-                }
-                attack_stop()
-              </script>
-            </td>
-            <td style="padding:20px;width:70%;vertical-align:middle">
-              <a href="https://arxiv.org/abs/2202.12417">
-                <papertitle>Optimal channel selection with discrete QCQP</papertitle>
-              </a>
-              <br>
-              Yeonwoo Jeong*, <strong>Deokjae Lee*</strong>, Gaon An, Changyong Son,
-              <a href="https://mllab.snu.ac.kr/hyunoh/">Hyun Oh Song</a>
-              <br>
-              <!--<em>International Conference on Machine Learning (ICML)</em>, 2019 &nbsp <font color="red"><strong>(Long Talk, 159/3424=4.6%)</strong></font>-->
-              <em>International Conference on Artificial Intelligence and Statistics (AISTATS)</em>, 2022 
-              <br>
-              <a href="https://arxiv.org/abs/2202.12417">paper</a> /
-              <a href="https://github.com/snu-mllab/Optimal-channel-selection-with-discrete-QCQP">code</a> /
-              <a href="data/jeong22aistats.txt">bibtex</a>
-              <p></p>
-              <p>We propose a novel channel selection method that optimally selects channels via discrete QCQP, which provably prevents any inactive weights and guarantees to meet the resource constraints tightly in terms of FLOPs, memory usage, and network size.</p>
-            </td>
-          </tr>
-        </tbody></table>
-        
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Work Experience</heading>
-              <ul>
-                <li>Research Intern, DeepMetrics, Seoul, South Korea, Jul 2023 - Sep 2023.</li>
-                <li>Research Intern, Visual Camp, Pangyo, South Korea, Dec 2018 - Feb 2019.</li>
-              </ul>
-            </td>
-          </tr>
-        </tbody></table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Teaching Experience</heading>
-              <ul>
-                <li>Teaching Assistant, Introduction to Deep Learning (M2177.0043), Spring 2023</li>
-                <li>Teaching Assistant, Machine Learning (4190.666), Fall 2020</li>
-                <li>Undergraduate Student Instructor, Basic Calculus 2 (033.017), Fall 2017</li>
-                <li>Undergraduate Student Instructor, Basic Calculus 1 (033.016), Spring 2017</li>
-              </ul>
-            </td>
-          </tr>
-        </tbody></table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Honors and Awards</heading>
-              <ul>
-                <li>Qualcomm Innovation Fellowship Korea Finalist (2023) </li>
-                <li>Yulchon AI Star Scholarship (2023) </li>
-                <li>Qualcomm Innovation Fellowship Korea Finalist (2022) </li>
-                <li>University Mathematics Competition, Field 1 Silver medal, from Korean (2019) </li>
-                <li>National Science & Technology Scholarship, (2018. 03. - 2020. 02.) </li>
-                <li>Korean Mathematical Olympiad (KMO), Silver medal (2013) </li>
-              </ul>
-            </td>
-          </tr>
-        </tbody></table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:20px;width:100%;vertical-align:middle">
-              <heading>Academic Services</heading>
-              <ul>
-                <li>Conference Reviewer: NeurIPS (2022, 2023), ICML (2023, 2024), ACL (2023), EMNLP (2023), ICLR (2024), COLM (2024)</li>
-              </ul>
-            </td>
-          </tr>
-        </tbody></table>
-
-        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;"><tbody>
-          <tr>
-            <td style="padding:0px">
-              <br>
-              <p style="text-align:right;font-size:small;">
-                This website is modified from <a href="https://jonbarron.info/">here</a>.
-              </p>
-            </td>
-          </tr>
-        </tbody></table>
-
+  <table>
+    <tr>
+      <td colspan="2" style="text-align: center;">
+        <img src="images/Sangwon_profile.jpg" alt="Main Photo" class="profile">
+        <p><name>Sang Won Baek</name></p>
+        <p>
+          Phone: (+82)-10-8805-3873 <br>
+          Email: <a href="mailto:Baeksw98@gmail.com">Baeksw98@gmail.com</a> <br>
+          GitHub: <a href="https://github.com/Baeksw98">https://github.com/Baeksw98</a> <br>
+          ORCID: <a href="https://orcid.org/0000-0002-7405-8892">https://orcid.org/0000-0002-7405-8892</a>
+        </p>
+        <p>
+          <a href="images/Baek_Resume.pdf">CV</a>
+        </p>
       </td>
     </tr>
+    <tr>
+      <td colspan="2">
+        <heading>Publications</heading>
+      </td>
+    </tr>
+    
+    <tr onmouseout="greedypolicy_stop()" onmouseover="greedypolicy_start()">
+      <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
+        <div id='greedypolicy' class='hidden'><img width="200" src="images/COVID_image.jpg"></div>
+        <div id='nogreedypolicy'>
+          <a href=""><img width="200" src="images/COVID_image.jpg"></a>
+        </div>
+        <script type="text/javascript">
+          function greedypolicy_start() {
+            document.getElementById('greedypolicy').style.display = 'inline';
+            document.getElementById('nogreedypolicy').style.display = 'none';
+          }
+
+          function greedypolicy_stop() {
+            document.getElementById('greedypolicy').style.display = 'none';
+            document.getElementById('nogreedypolicy').style.display = 'inline';
+          }
+          greedypolicy_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://doi.org/10.2196/52134">
+          <papertitle>Development and Validation of a Robust and Interpretable Early Triaging Support System for Patients Hospitalized With COVID-19</papertitle>
+        </a>
+        <br>
+        <strong>Sangwon Baek</strong>, Yeonwoo Jeong, Kim Y. H., Kim J. Y., Kim J. H., Kim E. Y., Lim J. K., Kim J., Kim Z., Chung M. J., Kim K.
+        <br>
+        <em>Journal of Medical Internet Research (JMIR)</em>, 2024
+        <br>
+        <a href="https://doi.org/10.2196/52134">paper</a> /
+        <a href="images/COVID_thesis.pdf">pdf</a> /
+        <a href="https://github.com/Baeksw98/SMC_COVID_Research">code</a> /
+        <a href="data/baek_COVID.txt">citation</a> /
+        <a href="https://riets-web.azurewebsites.net/">online application</a> /
+        <p></p>
+        <p>
+          Conducted a government funded ($9M), multicenter (19 hospitals), retrospective study to develop and validate a ML-based Robust and Interpretable
+          Early Triaging System (RIETS) for predicting COVID-19 severity progression as the first author under the supervision of Dr. Kyunga Kim \\
+          ✓ Established RIETS through comprehensively evaluating all possible combinations of candidate feature subsets and modeling algorithms \\
+          ✓ Utilized a tree-based unsupervised learning technique (i.e. DDRTree) to cluster and characterize patients based on the features in RIETS \\
+          ✓ Applied Shapley Additive exPlanations (SHAP) to interpret the marginal contributions of individual features in RIETS \\
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="depth_stop()" onmouseover="depth_start()">
+      <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
+        <div id='depth' class='hidden'><img width="200" src="images/ESCC_image.jpg"></div>
+        <div id='nodepth'>
+          <a href=""><img width="200" src="images/ESCC_image.jpg"></a>
+        </div>
+        <script type="text/javascript">
+          function depth_start() {
+            document.getElementById('depth').style.display = 'inline';
+            document.getElementById('nodepth').style.display = 'none';
+          }
+
+          function depth_stop() {
+            document.getElementById('depth').style.display = 'none';
+            document.getElementById('nodepth').style.display = 'inline';
+          }
+          depth_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="#">
+          <papertitle>Application of Network Analysis and Association Rule Mining for visualizing the Lymph Node Metastasis Patterns in Esophageal Squamous Cell Carcinoma</papertitle>
+        </a>
+        <br>
+        <strong>Sangwon Baek</strong>, Kim K., Park S.Y.
+        <br>
+        <em>Scientific Reports (in 2nd round review)</em>, 2024
+        <br>
+        <a href="https://github.com/Baeksw98/SMC_LN_Metastasis_Research">code</a> /
+        <a href="images/ESCC_thesis.pdf">pdf</a> /
+        <a href="data/baek_ESCC.txt">citation</a> 
+        <p></p>
+        <p>
+          Conducted a retrospective observational study on lymphatic metastases patterns in esophageal squamous cell carcinoma (ESCC) as the first author under the supervision of Dr. Seongyong Park and Dr. Kyunga Kim \\
+          ✓ Performed network analyses to elucidate the complex lymphatic metastases patterns in ESCC patients \\
+          ✓ Implemented association rule mining to quantify the important associations among metastasized lymph nodes \\
+        </p>
+      </td>
+    </tr>
+
+    <tr onmouseout="redteam_stop()" onmouseover="redteam_start()">
+      <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
+        <div id='redteam' class='hidden'><img width="200" src="images/Sepsis_image.jpg"></div>
+        <div id='noredteam'>
+          <a href=""><img width="200" src="images/Sepsis_image.jpg"></a>
+        </div>
+        <script type="text/javascript">
+          function redteam_start() {
+            document.getElementById('redteam').style.display = 'inline';
+            document.getElementById('noredteam').style.display = 'none';
+          }
+
+          function redteam_stop() {
+            document.getElementById('redteam').style.display = 'none';
+            document.getElementById('noredteam').style.display = 'inline';
+          }
+          redteam_stop()
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="#">
+          <papertitle>Clinical Characteristics and Laboratory Biomarkers in ICU-admitted Septic Patients with and without Bacteremia: A Predictive Analysis</papertitle>
+        </a>
+        <br>
+        <strong>Sangwon Baek</strong>, Lee S.J.
+        <br>
+        <em>medRxiv</em>, 2023
+        <br>
+        <a href="https://doi.org/10.1101/2023.11.16.23298625">paper</a> /
+        <a href="images/Sepsis_thesis.pdf">pdf</a> /
+        <a href="https://github.com/Baeksw98/GNUCH_Sepsis_Research">code</a> /
+        <a href="data/baek_Sepsis.txt">citation</a>
+        <p></p>
+        <p>
+          Conducted a retrospective cross-sectional study to develop a multivariable logistic regression-based mortality prediction system for severe patients
+          with or without bacteremic sepsis as the first author under the supervision of Dr. Seungjun Lee \\
+          ✓ Collected clinical and laboratory biomarkers from 300+ severe patients by thoroughly investigating electronic health records \\
+          ✓ Utilized Kaplan-Meier curve to visualize the patient survival probabilities within a 30-day hospitalized period \\
+        </p>
+      </td>
+    </tr>
+
   </table>
 </body>
-
 </html>
