@@ -32,12 +32,10 @@
     padding: 20px;
     vertical-align: middle;
   }
-  heading {
-    font-size: 1.5em;
-    font-weight: bold;
-  }
-  img.profile {
-    width: 130px;
+  img {
+    width: 200px;
+    height: 200px;
+    object-fit: contain;
   }
   .bullet-point {
     margin: 0;
@@ -49,29 +47,179 @@
   }
 </style>
 <body>
-  <table>
-    <tr>
-      <td colspan="2" style="text-align: center;">
-        <img src="images/Sangwon_profile.jpg" alt="Main Photo" class="profile">
-        <p><name>Sang Won Baek</name></p>
-        <p>
-          Phone: (+82)-10-8805-3873 <br>
-          Email: <a href="mailto:Baeksw98@gmail.com">Baeksw98@gmail.com</a> <br>
-          GitHub: <a href="https://github.com/Baeksw98">https://github.com/Baeksw98</a> <br>
-          ORCID: <a href="https://orcid.org/0000-0002-7405-8892">https://orcid.org/0000-0002-7405-8892</a>
-        </p>
-        <p>
-          <a href="images/Baek_Resume.pdf">CV</a>
-        </p>
+  <table style="width:100%;max-width:800px;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+    <tr style="padding:0px">
+      <td style="padding:0px">
+        <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;margin-right:auto;margin-left:auto;">
+          <tr style="padding:0px">
+            <td style="padding:2.5%;width:80%;vertical-align:middle">
+              <p style="text-align:center">
+                <name>Sang Won Baek</name>
+              </p>
+              <p>
+                I am currently working as an AI/ML Research Scientist at Sionic AI. At Sionic, I am working on developing Multimodal LLM specialized in document recognition and processing, as well as LLM Merging techniques.
+                My research interests include Real-World Data Analytics, Predictive Modeling, Explainable AI, Interpretable ML, Multimodal Learning, Data Mining, and Data Visualization. My primary objective is to develop AI-based precision healthcare systems that streamline clinical workflows and enhance patient care. 
+                I also aim to constitute a unified AI system using state-of-the-art engineering techniques to ensure reliability and practicability in healthcare AI tools. 
+              </p>
+              <p style="text-align:center">
+                <a href="mailto:Baeksw98@gmail.com">Email</a> &nbsp;/&nbsp;
+                <a href="https://github.com/Baeksw98">GitHub</a> &nbsp;/&nbsp;
+                <a href="images/Baek_Resume.pdf">CV</a>
+              </p>
+            </td>
+            <td style="padding:2.5%;width:23%;max-width:23%">
+              <img width="130" alt="profile photo" src="images/Sangwon_profile.jpg">
+            </td>
+          </tr>
+        </table>
       </td>
     </tr>
-    <tr>
-      <td colspan="2">
-        <heading>Publications</heading>
-      </td>
-    </tr>
-    
+
+    <!-- COVID-19 Research -->
     <tr onmouseout="greedypolicy_stop()" onmouseover="greedypolicy_start()">
+      <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
+        <div id='greedypolicy' class='hidden'>
+          <img src="images/COVID_image_1.png" alt="COVID Research Image 1">
+          <img src="images/COVID_image_2.png" alt="COVID Research Image 2">
+          <img src="images/COVID_image_3.png" alt="COVID Research Image 3">
+          <img src="images/COVID_image_4.png" alt="COVID Research Image 4">
+          <img src="images/COVID_image_5.png" alt="COVID Research Image 5">
+          <img src="images/COVID_image_6.png" alt="COVID Research Image 6">
+        </div>
+        <div id='nogreedypolicy'>
+          <a href=""><img src="images/COVID_image_1.png" alt="COVID Research Image"></a>
+        </div>
+        <script type="text/javascript">
+          function greedypolicy_start() {
+            document.getElementById('greedypolicy').style.display = 'inline';
+            document.getElementById('nogreedypolicy').style.display = 'none';
+          }
+
+          function greedypolicy_stop() {
+            document.getElementById('greedypolicy').style.display = 'none';
+            document.getElementById('nogreedypolicy').style.display = 'inline';
+          }
+          greedypolicy_stop();
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="https://doi.org/10.2196/52134">
+          <papertitle>Development and Validation of a Robust and Interpretable Early Triaging Support System for Patients Hospitalized With COVID-19</papertitle>
+        </a>
+        <br>
+        <strong>Baek, S.</strong>, Jeong Y. J., Kim Y. H., Kim J. Y., Kim J. H., Kim E. Y., Lim J. K., Kim J., Kim Z., Chung M. J.†, Kim K.†
+        <br>
+        <em>Journal of Medical Internet Research (JMIR)</em>, 2024
+        <br>
+        <a href="https://doi.org/10.2196/52134">paper</a> /
+        <a href="images/COVID_thesis.pdf">pdf</a> /
+        <a href="https://github.com/Baeksw98/SMC_COVID_Research">code</a> /
+        <a href="data/baek_COVID.txt">citation</a> /
+        <a href="https://riets-web.azurewebsites.net/">web application</a>
+        <p></p>
+        <ul class="bullet-point">
+          <li>Conducted a government funded ($9M), multicenter (19 hospitals), retrospective study to develop and validate a ML-based Robust and Interpretable Early Triaging System (RIETS) for predicting COVID-19 severity progression as the first author under the supervision of Dr. Kyunga Kim.</li>
+          <li>Established RIETS through comprehensively evaluating all possible combinations of candidate feature subsets and modeling algorithms.</li>
+          <li>Utilized a tree-based unsupervised learning technique (i.e., DDRTree) to cluster and characterize patients based on the features in RIETS.</li>
+          <li>Applied Shapley Additive exPlanations (SHAP) to interpret the marginal contributions of individual features in RIETS.</li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- ESCC Research -->
+    <tr onmouseout="depth_stop()" onmouseover="depth_start()">
+      <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
+        <div id='depth' class='hidden'>
+          <img src="images/ESCC_image_1.png" alt="ESCC Research Image 1">
+          <img src="images/ESCC_image_2.png" alt="ESCC Research Image 2">
+          <img src="images/ESCC_image_3.png" alt="ESCC Research Image 3">
+          <img src="images/ESCC_image_4.png" alt="ESCC Research Image 4">
+          <img src="images/ESCC_image_5.png" alt="ESCC Research Image 5">
+        </div>
+        <div id='nodepth'>
+          <a href=""><img src="images/ESCC_image_1.png" alt="ESCC Research Image"></a>
+        </div>
+        <script type="text/javascript">
+          function depth_start() {
+            document.getElementById('depth').style.display = 'inline';
+            document.getElementById('nodepth').style.display = 'none';
+          }
+
+          function depth_stop() {
+            document.getElementById('depth').style.display = 'none';
+            document.getElementById('nodepth').style.display = 'inline';
+          }
+          depth_stop();
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="#">
+          <papertitle>Application of Network Analysis and Association Rule Mining for visualizing the Lymph Node Metastasis Patterns in Esophageal Squamous Cell Carcinoma</papertitle>
+        </a>
+        <br>
+        <strong>Baek, S.</strong>, Kim, K.†, Park, S.Y.†, Jeon, Y. J., Lee, J. H., Cho, J. H., Kim, H. K., Choi, Y. S., Zo, J. I., Shim, Y. M.
+        <br>
+        <em>Scientific Reports (in 2nd round review)</em>, 2024
+        <br>
+        <a href="https://github.com/Baeksw98/SMC_LN_Metastasis_Research">code</a> /
+        <a href="images/ESCC_thesis.pdf">pdf</a> /
+        <a href="data/baek_ESCC.txt">citation</a>
+        <p></p>
+        <ul class="bullet-point">
+          <li>Conducted a retrospective observational study on lymphatic metastases patterns in esophageal squamous cell carcinoma (ESCC) as the first author under the supervision of Dr. Seongyong Park and Dr. Kyunga Kim.</li>
+          <li>Performed network analyses to elucidate the complex lymphatic metastases patterns in ESCC patients.</li>
+          <li>Implemented association rule mining to quantify the important associations among metastasized lymph nodes.</li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- Sepsis Research -->
+    <tr onmouseout="redteam_stop()" onmouseover="redteam_start()">
+      <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
+        <div id='redteam' class='hidden'>
+          <img src="images/Sepsis_image_1.png" alt="Sepsis Research Image 1">
+          <img src="images/Sepsis_image_2.png" alt="Sepsis Research Image 2">
+          <img src="images/Sepsis_image_3.png" alt="Sepsis Research Image 3">
+        </div>
+        <div id='noredteam'>
+          <a href=""><img src="images/Sepsis_image_1.png" alt="Sepsis Research Image"></a>
+        </div>
+        <script type="text/javascript">
+          function redteam_start() {
+            document.getElementById('redteam').style.display = 'inline';
+            document.getElementById('noredteam').style.display = 'none';
+          }
+
+          function redteam_stop() {
+            document.getElementById('redteam').style.display = 'none';
+            document.getElementById('noredteam').style.display = 'inline';
+          }
+          redteam_stop();
+        </script>
+      </td>
+      <td style="padding:20px;width:70%;vertical-align:middle">
+        <a href="#">
+          <papertitle>Clinical Characteristics and Laboratory Biomarkers in ICU-admitted Septic Patients with and without Bacteremia: A Predictive Analysis</papertitle>
+        </a>
+        <br>
+        <strong>Baek, S.</strong>, Lee S.J.
+        <br>
+        <em>medRxiv</em>, 2023
+        <br>
+        <a href="https://doi.org/10.1101/2023.11.16.23298625">paper</a> /
+        <a href="images/Sepsis_thesis.pdf">pdf</a> /
+        <a href="https://github.com/Baeksw98/GNUCH_Sepsis_Research">code</a> /
+        <a href="data/baek_Sepsis.txt">citation</a>
+        <p></p>
+        <ul class="bullet-point">
+          <li>Conducted a retrospective cross-sectional study to develop a multivariable logistic regression-based mortality prediction system for severe patients with or without bacteremic sepsis as the first author under the supervision of Dr. Seungjun Lee.</li>
+          <li>Collected clinical and laboratory biomarkers from 300+ severe patients by thoroughly investigating electronic health records.</li>
+          <li>Utilized Kaplan-Meier curve to visualize the patient survival probabilities within a 30-day hospitalized period.</li>
+        </ul>
+      </td>
+    </tr>
+
+    <!-- <tr onmouseout="greedypolicy_stop()" onmouseover="greedypolicy_start()">
       <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
         <div id='greedypolicy' class='hidden'><img width="200" src="images/COVID_image.png"></div>
         <div id='nogreedypolicy'>
@@ -193,7 +341,7 @@
           <li>Utilized Kaplan-Meier curve to visualize the patient survival probabilities within a 30-day hospitalized period</li>
         </ul>
       </td>
-    </tr>
+    </tr> -->
 
     <tr>
       <td colspan="2">
