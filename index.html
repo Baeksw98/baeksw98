@@ -16,14 +16,14 @@
   a {
     color: #1e90ff;
     text-decoration: none;
-    font-size: 18px; /* Increased link font size */
+    font-size: 16px; /* Increased link font size */
   }
   a:hover {
     text-decoration: underline;
   }
   table {
     width: 100%;
-    max-width: 1000px;
+    max-width: 1200px;
     border: 0;
     border-spacing: 0;
     border-collapse: separate;
@@ -34,9 +34,16 @@
     vertical-align: middle;
   }
   img {
-    width: 200px;
-    height: 200px;
+    width: 300px;
+    height: 300px;
     object-fit: contain;
+  }
+  .heading {
+    font-size: 28px; /* Increased section title size */
+    font-weight: bold; /* Bold font for section titles */
+    text-align: center; /* Center-align section titles */
+    padding-bottom: 10px;
+    margin-top: 20px; /* Add space above the headings */
   }
   .bullet-point {
     margin: 0;
@@ -52,22 +59,21 @@
   }
   .mySlides {
     display: none;
+    transition: opacity 0.5s ease-in-out; /* Smooth fade effect */
+    opacity: 0; /* Initially invisible */
   }
-  .heading {
-    font-size: 28px; /* Increased section title size */
-    font-weight: bold; /* Bold font for section titles */
-    text-align: center; /* Center-align section titles */
-    padding-bottom: 10px;
-    margin-top: 30px; /* Add space above the headings */
+  .mySlides.active {
+    display: block;
+    opacity: 1; /* Make visible with fade-in effect */
   }
 </style>
 <body>
-  <div style="max-width: 1000px; margin: 0 auto;">
+  <div style="max-width: 1200px; margin: 0 auto;">
     <!-- Introductory Section -->
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
       <tr style="padding:0px">
         <td style="padding:2.5%;vertical-align:middle;width:75%">
-          <p style="text-align:left; margin-bottom: 0; font-size: 30px;">
+          <p style="text-align:left; margin-bottom: 5px; font-size: 32px;">
             <name>Sang Won Baek</name>
           </p>
           <p style="margin-top: 0;">
@@ -90,7 +96,7 @@
           </p>
         </td>
         <td style="padding:2.5%;width:25%;text-align:center">
-          <img width="130" alt="profile photo" src="images/Sangwon_profile.jpg">
+          <img width="160" alt="profile photo" src="images/Sangwon_profile.jpg">
         </td>
       </tr>
     </table>
@@ -338,29 +344,29 @@
 
   <script>
     let slideIndex = 0;
-    let slideInterval;
-
+    let slideIntervals = [];
+  
     function showSlides(className) {
       let slides = document.querySelectorAll(`.${className}`);
       for (let i = 0; i < slides.length; i++) {
-        slides[i].style.display = "none";
+        slides[i].classList.remove("active");
       }
       slideIndex++;
       if (slideIndex > slides.length) {
         slideIndex = 1;
       }
-      slides[slideIndex - 1].style.display = "block";
+      slides[slideIndex - 1].classList.add("active");
     }
-
+  
     function startSlideshow(className) {
       showSlides(className);
-      slideInterval = setInterval(() => showSlides(className), 1000); // Change image every 1 second
+      slideIntervals.push(setInterval(() => showSlides(className), 1500)); // Change image every 1.5 seconds
     }
-
+  
     function stopSlideshow() {
-      clearInterval(slideInterval);
+      slideIntervals.forEach(clearInterval);
     }
-
+  
     window.onload = function() {
       startSlideshow('greedypolicy');
       startSlideshow('depth');
