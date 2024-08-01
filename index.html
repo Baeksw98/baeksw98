@@ -95,11 +95,13 @@
 
   /* Mobile Styles */
   @media (max-width: 768px) {
-    body {
-      padding: 0;
+    body, html {
       margin: 0;
+      padding: 0;
+      width: 100%;
+      overflow-x: hidden;
     }
-    table, tr, td {
+    td, table {
       width: 100%;
       max-width: 100%;
       padding: 0;
@@ -135,10 +137,6 @@
     .profile-section p {
       font-size: 30px; 
       margin-bottom: 5px;
-    }
-    /* Research publications section adjustments */
-    .research-table td {
-      padding: 10px; /* Remove padding to eliminate empty space */
     }
   }
 </style>
