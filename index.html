@@ -9,14 +9,13 @@
 </head>
 <style>
   body {
-    background-color: #272822;
-    color: #ffffff;
+    background-color: #faf5f5; /* Set background to white */
+    color: #030e1c; /* Set text color to black */
     font-family: Arial, sans-serif;
   }
   a {
-    color: #1e90ff;
+    color: #1c508c;
     text-decoration: none;
-    font-size: 16px; /* Increased link font size */
   }
   a:hover {
     text-decoration: underline;
@@ -37,10 +36,11 @@
     width: 300px;
     height: 300px;
     object-fit: contain;
+    border: 2px solid #030e1c; /* Add black border around image */
   }
   .papertitle {
-    font-size: 18px; 
-    font-weight: bold; 
+    font-size: 18px;
+    font-weight: bold;
   }
   .heading {
     font-size: 28px; /* Increased section title size */
@@ -63,44 +63,85 @@
   }
   .mySlides {
     display: none;
-    transition: opacity 0.5s ease-in-out; /* Smooth fade effect */
+    transition: opacity 0.8s ease-in-out; /* Smooth fade effect */
     opacity: 0; /* Initially invisible */
   }
   .mySlides.active {
     display: block;
     opacity: 1; /* Make visible with fade-in effect */
   }
+  /* Mobile Styles */
+  @media (max-width: 768px) {
+    td {
+      display: block;
+      width: 100%;
+      padding: 10px;
+    }
+    img {
+      width: 200px; /* Increased width for mobile */
+      height: 200px; /* Increased height for mobile */
+      margin: 10px auto;
+      display: block;
+    }
+    .intro-text, .links {
+      text-align: center;
+    }
+    .intro-text {
+      font-size: 12px;
+    }
+    .links a {
+      display: inline-block;
+      margin: 5px 0;
+    }
+    .profile-section {
+      text-align: center;
+    }
+    .profile-section p {
+      font-size: 24px; /* Reduced font size for mobile */
+      margin-bottom: 5px;
+    }
+  }
 </style>
 <body>
   <div style="max-width: 1200px; margin: 0 auto;">
     <!-- Introductory Section -->
     <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
-      <tr style="padding:0px">
-        <td style="padding:2.5%;vertical-align:middle;width:75%">
-          <p style="text-align:left; margin-bottom: 5px; font-size: 32px;">
-            <name>Sang Won Baek</name>
+      <tr class="profile-section">
+        <td style="padding:2.5%;text-align:left;width:100%;">
+          <p style="margin-bottom: 5px; font-size: 32px; text-align: center;">
+            Sang Won Baek
           </p>
+        </td>
+      </tr>
+      <tr class="profile-section">
+        <td style="padding:2.5%;text-align:center;width:100%;">
+          <img src="images/Sangwon_profile.jpg" alt="profile photo">
+        </td>
+      </tr>
+      <tr>
+        <td class="intro-text" style="padding:2.5%;width:100%;">
           <p style="margin-top: 0;">
-            I work as an AI Research Scientist at Sionic AI. I am currently leading a multimodal LLM research project to optimize AI reasoning and content detection in various file formats.
-            Prior to joining Sionic, I worked as a Medical Data Scientist at Samsung Medical Center and Seoul National University Hospital, primarily conducting research on developing and validating healthcare AI tools.
+            I work as an AI Research Scientist at <a href="https://www.sionic.ai/en">Sionic AI</a>. I am currently leading a multimodal LLM research project to optimize AI reasoning and content detection in various file formats. 
+            Prior to joining Sionic, I graduated from <a href="https://cds.nyu.edu/">Center for Data Science</a> at <a href="https://www.nyu.edu/">New York University</a>. I worked as a Medical Data Scientist at <a href="https://www.samsunghospital.com/gb/language/english/main/index.do">Samsung Medical Center</a> under the guidance of <a href="https://www.researchgate.net/profile/Kyunga-Kim-2">Dr. Kyunga Kim</a> and <a href="http://www.samsunghospital.com/home/reservation/common/eng/doctorProfile.do?dr_no=3004">Dr. Seongyong Park</a>. Then, I worked at <a href="http://www.snuh.org/global/en/main.do">Seoul National University Hospital</a> under the guidance of <a href="http://www.snuh.org/global/en/blog/66015/paper.do">Dr. Hyunkyu Yoon</a>.
             My research interests include Real-World Data Analytics, Predictive Modeling, Explainable AI, Interpretable ML, Multimodal Learning, Data Mining, and Data Visualization. My primary objective is to develop AI-based precision healthcare systems that streamline clinical workflows and enhance patient care.
             My primary research objectives are as follows:
             <ol>
-              <li>Deliver interpretable and reliable AI tools to clinicians to provide a holistic view of disease progression, thereby facilitating clinical workflows and enhancing patient care.</li>
-              <li>Develop a precision healthcare system using advanced AI tools to generate detailed patient profiles from multimodal physiological data, optimizing the use of comprehensive information for personalized treatment.</li>
+                <li>Deliver interpretable and reliable AI tools to clinicians to provide a holistic view of disease progression, thereby facilitating clinical workflows and enhancing patient care.</li>
+                <li>Develop a precision healthcare system using advanced AI tools to generate detailed patient profiles from multimodal physiological data, optimizing the use of comprehensive information for personalized treatment.</li>
             </ol>
           </p>
-          <p style="text-align:left">
-            <a href="mailto:Baeksw98@gmail.com">Email</a> &nbsp/&nbsp
-            <a href="https://github.com/Baeksw98">GitHub</a> &nbsp/&nbsp
-            <a href="https://scholar.google.com/citations?hl=en&user=w30__doAAAAJ">Google Scholar</a> &nbsp/&nbsp
-            <a href="https://orcid.org/0000-0002-7405-8892">ORCID</a> &nbsp/&nbsp
-            <a href="https://www.linkedin.com/in/baeksw98/">LinkedIn</a> &nbsp/&nbsp
-            <a href="images/Baek_Resume.pdf">CV</a>              
-          </p>
         </td>
-        <td style="padding:2.5%;width:25%;text-align:center">
-          <img width="160" alt="profile photo" src="images/Sangwon_profile.jpg">
+      </tr>
+      <tr>
+        <td class="links" style="padding:2.5%;text-align:center;width:100%;">
+          <p>
+            <a href="mailto:Baeksw98@gmail.com">Email</a> &nbsp;/&nbsp;
+            <a href="https://github.com/Baeksw98">GitHub</a> &nbsp;/&nbsp;
+            <a href="https://scholar.google.com/citations?hl=en&user=w30__doAAAAJ">Google Scholar</a> &nbsp;/&nbsp;
+            <a href="https://orcid.org/0000-0002-7405-8892">ORCID</a> &nbsp;/&nbsp;
+            <a href="https://www.linkedin.com/in/baeksw98/">LinkedIn</a> &nbsp;/&nbsp;
+            <a href="images/Baek_Resume.pdf">CV</a>
+          </p>
         </td>
       </tr>
     </table>
