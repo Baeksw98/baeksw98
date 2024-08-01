@@ -100,6 +100,27 @@
   .profile-photo {
     border: 2px solid #030e1c;
   }
+  .research-table {
+    width: 100%;
+    max-width: 100%;
+    border: 0;
+    border-spacing: 0;
+    border-collapse: separate;
+  }
+  .research-table td {
+    padding: 15px;
+    vertical-align: top;
+  }
+  .research-table .image-cell,
+  .research-table .content-cell {
+    width: 100%;
+  }
+  .research-table .image-cell {
+    width: 30%;
+  }
+  .research-table .content-cell {
+    width: 70%;
+  }
 
   /* Mobile Styles */
   @media (max-width: 768px) {
@@ -154,8 +175,7 @@
     .research-table .image-cell,
     .research-table .content-cell {
       width: 100%;
-      max-width: 100%;
-      padding: 10px;
+      padding: 5px;
     }
     .research-table .image-cell {
       order: 2;
@@ -217,9 +237,9 @@
 
 
     <!-- COVID-19 Research -->
-    <table class="research-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
+    <table class="research-table">
       <tr>
-        <td class="image-cell" style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
+        <td class="image-cell">
           <div class="slideshow-container">
             <img class="mySlides greedypolicy" src="images/COVID_image_1.png" alt="COVID Research Image 1">
             <img class="mySlides greedypolicy" src="images/COVID_image_2.png" alt="COVID Research Image 2">
@@ -233,7 +253,7 @@
             <img class="mySlides greedypolicy" src="images/COVID_image_6.png" alt="COVID Research Image 6">
           </div>
         </td>
-        <td class="content-cell" style="padding:20px;width:70%;vertical-align:middle">
+        <td class="content-cell">
           <a href="https://doi.org/10.2196/52134" class="papertitle">
             Development and Validation of a Robust and Interpretable Early Triaging Support System for Patients Hospitalized With COVID-19
           </a>
@@ -256,9 +276,9 @@
     </table>
 
     <!-- ESCC Research -->
-    <table class="research-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
+    <table class="research-table">
       <tr>
-        <td class="image-cell" style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
+        <td class="image-cell">
           <div class="slideshow-container">
             <img class="mySlides depth" src="images/ESCC_image_1.png" alt="ESCC Research Image 1">
             <img class="mySlides depth" src="images/ESCC_image_2.png" alt="ESCC Research Image 2">
@@ -272,7 +292,7 @@
             <img class="mySlides depth" src="images/ESCC_image_4.png" alt="ESCC Research Image 4">
           </div>
         </td>
-        <td class="content-cell" style="padding:20px;width:70%;vertical-align:middle">
+        <td class="content-cell">
           <a href="images\LM_Metastasis_Abstract.pdf" class="papertitle">
             Application of Network Analysis and Association Rule Mining for visualizing the Lymph Node Metastasis Patterns in Esophageal Squamous Cell Carcinoma
           </a>
@@ -293,9 +313,9 @@
     </table>
 
     <!-- Sepsis Research -->
-    <table class="research-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
+    <table class="research-table">
       <tr>
-        <td class="image-cell" style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
+        <td class="image-cell">
           <div class="slideshow-container">
             <img class="mySlides redteam" src="images/Sepsis_image_1.png" alt="Sepsis Research Image 1">
             <img class="mySlides redteam" src="images/Sepsis_image_2.png" alt="Sepsis Research Image 2">
@@ -309,7 +329,7 @@
             <img class="mySlides redteam" src="images/Sepsis_image_2.png" alt="Sepsis Research Image 2">
           </div>
         </td>
-        <td class="content-cell" style="padding:20px;width:70%;vertical-align:middle">
+        <td class="content-cell">
           <a href="https://doi.org/10.1101/2023.11.16.23298625" class="papertitle">
             Clinical Characteristics and Laboratory Biomarkers in ICU-admitted Septic Patients with and without Bacteremia: A Predictive Analysis
           </a>
