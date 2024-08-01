@@ -121,7 +121,10 @@
   .research-table .content-cell {
     width: 70%;
   }
-
+  .reference-links {
+    font-size: 20px; /* Adjust the size as desired */
+    font-weight: bold; /* Optional: Make the font bold */
+  }
   /* Mobile Styles */
   @media (max-width: 768px) {
     body, html {
@@ -139,13 +142,13 @@
       box-sizing: border-box;
     }
     img {
-      width: 200px; 
-      height: 200px;
+      width: 300px; 
+      height: 300px;
       margin: 0 auto; 
       display: block;
     }
     .intro-text {
-      font-size: 13px;
+      font-size: 12px;
       text-align: left; 
       padding: 0 5px; 
       margin-bottom: 0; 
@@ -185,6 +188,15 @@
     }
     .slideshow-container {
       margin-top: 20px;
+    }
+    /* Profile photo specific styling */
+    .profile-photo {
+      width: 200px;
+      height: 200px;
+    }
+    .reference-links {
+      font-size: 14px; /* Adjust the size as desired */
+      font-weight: bold; /* Optional: Make the font bold */
     }
   }
 </style>
@@ -262,11 +274,11 @@
           <br>
           <em>Journal of Medical Internet Research (JMIR)</em>, 2024
           <br>
-          <a href="https://doi.org/10.2196/52134">paper</a> /
-          <a href="images/COVID_thesis.pdf">pdf</a> /
-          <a href="https://github.com/Baeksw98/SMC_COVID_Research">code</a> /
-          <a href="data/baek_COVID.txt">citation</a> /
-          <a href="https://riets-web.azurewebsites.net/">web application</a>
+          <a href="https://doi.org/10.2196/52134" class="reference-links">paper</a> /
+          <a href="images/COVID_thesis.pdf" class="reference-links">pdf</a> /
+          <a href="https://github.com/Baeksw98/SMC_COVID_Research" class="reference-links">code</a> /
+          <a href="data/baek_COVID.txt" class="reference-links">citation</a> /
+          <a href="https://riets-web.azurewebsites.net/" class="reference-links">web application</a>
           <p></p>
           <ul class="bullet-point">
             <li>Conducted a government funded ($9M), multicenter (19 hospitals), retrospective study to develop and validate a ML-based Robust and Interpretable Early Triaging System (RIETS) for predicting severity progression among hospitalized COVID-19 patients as the <strong> first author </strong> under the supervision of Dr. Kyunga Kim.</li>
@@ -301,9 +313,9 @@
           <br>
           <em>Scientific Reports (in 2nd round review)</em>, 2024
           <br>
-          <a href="https://github.com/Baeksw98/SMC_LN_Metastasis_Research">code</a> /
-          <a href="images\LM_Metastasis_Abstract.pdf">pdf</a> /
-          <a href="data/baek_ESCC.txt">citation</a>
+          <a href="https://github.com/Baeksw98/SMC_LN_Metastasis_Research" class="reference-links">code</a> /
+          <a href="images\LM_Metastasis_Abstract.pdf" class="reference-links">pdf</a> /
+          <a href="data/baek_ESCC.txt" class="reference-links">citation</a>
           <p></p>
           <ul class="bullet-point">
             <li>Conducted a retrospective observational study on analyzing the patterns of lymphatic metastases in patients with esophageal squamous cell carcinoma (ESCC) as the <strong> first author </strong> under the supervision of Dr. Seongyong Park and Dr. Kyunga Kim.</li>
@@ -338,10 +350,10 @@
           <br>
           <em>medRxiv (preprint)</em>, 2023
           <br>
-          <a href="https://doi.org/10.1101/2023.11.16.23298625">paper</a> /
-          <a href="images/Sepsis_thesis.pdf">pdf</a> /
-          <a href="https://github.com/Baeksw98/GNUCH_Sepsis_Research">code</a> /
-          <a href="data/baek_Sepsis.txt">citation</a>
+          <a href="https://doi.org/10.1101/2023.11.16.23298625" class="reference-links">paper</a> /
+          <a href="images/Sepsis_thesis.pdf" class="reference-links">pdf</a> /
+          <a href="https://github.com/Baeksw98/GNUCH_Sepsis_Research" class="reference-links">code</a> /
+          <a href="data/baek_Sepsis.txt" class="reference-links">citation</a>
           <p></p>
           <ul class="bullet-point">
             <li>Conducted a retrospective cross-sectional study to develop a multivariable logistic regression-based mortality prediction system for ICU-admitted septic patients with or without bacteremia as the <strong> first author </strong>  under the supervision of Dr. Seungjun Lee.</li>
