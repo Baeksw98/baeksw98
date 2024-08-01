@@ -10,7 +10,7 @@
 <style>
   /* PC (Default Style) */
   body {
-    background-color: #f7f7f7; /* Set background to white */
+    background-color: #f2f2f2; /* Set background to white */
     color: #030e1c; /* Set text color to black */
     font-family: Arial, sans-serif;
     margin: 0;
@@ -73,11 +73,12 @@
     opacity: 1; /* Make visible with fade-in effect */
   }
   .links p {
-    font-size: 18px;
+    font-size: 25px; /* Larger font size for PC */
     text-align: center;
     margin: 0;
   }
   .links a {
+    font-size: 25px; /* Larger font size for PC */
     display: inline-block;
     margin: 5px 0;
   }
@@ -87,8 +88,8 @@
     padding: 0 5px; 
     margin-bottom: 0; 
   }
-  /* Add a border to the first image only */
-  img:first-of-type {
+  /* Profile photo specific styling */
+  .profile-photo {
     border: 2px solid #030e1c;
   }
 
@@ -117,10 +118,10 @@
       padding: 0;
       font-size: 12px; 
     }
+    .links p,
     .links a {
-      display: inline-block;
-      margin: 5px 0;
-      text-align: center;
+      font-size: 14px; /* Smaller font size for mobile */
+      padding: 0; 
     }
     .profile-section {
       text-align: center;
@@ -129,6 +130,10 @@
     .profile-section p {
       font-size: 30px; 
       margin-bottom: 5px;
+    }
+    /* Research publications section adjustments */
+    .research-publications td {
+      padding: 5px 0; /* Remove padding to eliminate empty space */
     }
   }
 </style>
@@ -145,7 +150,7 @@
       </tr>
       <tr class="profile-section">
         <td style="padding:2.5%;text-align:center;width:100%;">
-          <img src="images/Sangwon_profile.jpg" alt="profile photo">
+          <img src="images/Sangwon_profile.jpg" alt="profile photo" class="profile-photo">
         </td>
       </tr>
       <tr>
