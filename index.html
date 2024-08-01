@@ -9,9 +9,11 @@
 </head>
 <style>
   body {
-    background-color: #faf5f5; /* Set background to white */
+    background-color: #f7f7f7; /* Set background to white */
     color: #030e1c; /* Set text color to black */
     font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
   }
   a {
     color: #1c508c;
@@ -31,12 +33,6 @@
   td {
     padding: 20px;
     vertical-align: middle;
-  }
-  img {
-    width: 300px;
-    height: 300px;
-    object-fit: contain;
-    border: 2px solid #030e1c; /* Add black border around image */
   }
   .papertitle {
     font-size: 18px;
@@ -70,37 +66,53 @@
     display: block;
     opacity: 1; /* Make visible with fade-in effect */
   }
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    td {
-      display: block;
-      width: 100%;
-      padding: 10px;
-    }
-    img {
-      width: 200px; /* Increased width for mobile */
-      height: 200px; /* Increased height for mobile */
-      margin: 10px auto;
-      display: block;
-    }
-    .intro-text, .links {
-      text-align: center;
-    }
-    .intro-text {
-      font-size: 12px;
-    }
-    .links a {
-      display: inline-block;
-      margin: 5px 0;
-    }
-    .profile-section {
-      text-align: center;
-    }
-    .profile-section p {
-      font-size: 24px; /* Reduced font size for mobile */
-      margin-bottom: 5px;
-    }
+
+  /* Add a border to the first image only */
+  img:first-of-type {
+    border: 2px solid #030e1c;
   }
+
+/* Add a border to the first image only */
+img:first-of-type {
+  border: 2px solid #030e1c;
+}
+
+/* Mobile Styles */
+@media (max-width: 768px) {
+  td {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  img:not(:first-of-type) {
+    width: 100%; /* Make subsequent images full width */
+    max-width: 400px; /* Set a maximum width for subsequent images */
+    height: auto; /* Maintain aspect ratio */
+    margin: 5px auto;
+    display: block;
+  }
+  .intro-text {
+    font-size: 14px;
+    text-align: left; /* Align the text to the left */
+    padding: 0 5px; /* Add padding for better readability */
+  }
+  .links {
+    text-align: center;
+    padding: 0 5px;
+  }
+  .links a {
+    display: inline-block;
+    margin: 5px 0;
+  }
+  .profile-section {
+    text-align: center;
+  }
+  .profile-section p {
+    font-size: 30px; /* Reduced font size for mobile */
+    margin-bottom: 5px;
+  }
+}
 </style>
 <body>
   <div style="max-width: 1200px; margin: 0 auto;">
@@ -119,11 +131,11 @@
         </td>
       </tr>
       <tr>
-        <td class="intro-text" style="padding:2.5%;width:100%;">
+        <td class="intro-text" style="width:100%;">
           <p style="margin-top: 0;">
             I work as an AI Research Scientist at <a href="https://www.sionic.ai/en">Sionic AI</a>. I am currently leading a multimodal LLM research project to optimize AI reasoning and content detection in various file formats. 
             Prior to joining Sionic, I graduated from <a href="https://cds.nyu.edu/">Center for Data Science</a> at <a href="https://www.nyu.edu/">New York University</a>. I worked as a Medical Data Scientist at <a href="https://www.samsunghospital.com/gb/language/english/main/index.do">Samsung Medical Center</a> under the guidance of <a href="https://www.researchgate.net/profile/Kyunga-Kim-2">Dr. Kyunga Kim</a> and <a href="http://www.samsunghospital.com/home/reservation/common/eng/doctorProfile.do?dr_no=3004">Dr. Seongyong Park</a>. Then, I worked at <a href="http://www.snuh.org/global/en/main.do">Seoul National University Hospital</a> under the guidance of <a href="http://www.snuh.org/global/en/blog/66015/paper.do">Dr. Hyunkyu Yoon</a>.
-            My research interests include Real-World Data Analytics, Predictive Modeling, Explainable AI, Interpretable ML, Multimodal Learning, Data Mining, and Data Visualization. My primary objective is to develop AI-based precision healthcare systems that streamline clinical workflows and enhance patient care.
+            My research interests include Real-World Data Analytics, Predictive Modeling, Explainable AI, Interpretable ML, Multimodal Learning, Data Mining, and Data Visualization. 
             My primary research objectives are as follows:
             <ol>
                 <li>Deliver interpretable and reliable AI tools to clinicians to provide a holistic view of disease progression, thereby facilitating clinical workflows and enhancing patient care.</li>
@@ -133,7 +145,7 @@
         </td>
       </tr>
       <tr>
-        <td class="links" style="padding:2.5%;text-align:center;width:100%;">
+        <td class="links" style="width:100%;">
           <p>
             <a href="mailto:Baeksw98@gmail.com">Email</a> &nbsp;/&nbsp;
             <a href="https://github.com/Baeksw98">GitHub</a> &nbsp;/&nbsp;
