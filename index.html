@@ -8,6 +8,7 @@
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
 </head>
 <style>
+  /* PC (Default Style) */
   body {
     background-color: #f7f7f7; /* Set background to white */
     color: #030e1c; /* Set text color to black */
@@ -72,7 +73,21 @@
     display: block;
     opacity: 1; /* Make visible with fade-in effect */
   }
-
+  .links p {
+    font-size: 18px;
+    text-align: center;
+    margin: 0;
+  }
+  .links a {
+    display: inline-block;
+    margin: 5px 0;
+  }
+  .intro-text {
+    font-size: 16px;
+    text-align: left; 
+    padding: 0 5px; 
+    margin-bottom: 0; 
+  }
   /* Add a border to the first image only */
   img:first-of-type {
     border: 2px solid #030e1c;
@@ -93,17 +108,20 @@
       display: block;
     }
     .intro-text {
-      font-size: 14px;
+      font-size: 13px;
       text-align: left; 
       padding: 0 5px; 
+      margin-bottom: 0; 
     }
     .links {
       text-align: center;
       padding: 0;
+      font-size: 12px; 
     }
     .links a {
       display: inline-block;
       margin: 5px 0;
+      text-align: center;
     }
     .profile-section {
       text-align: center;
