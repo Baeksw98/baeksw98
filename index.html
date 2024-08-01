@@ -132,8 +132,11 @@
       margin-bottom: 5px;
     }
     /* Research publications section adjustments */
-    .research-publications td {
+    .research-table td {
       padding: 5px 0; /* Remove padding to eliminate empty space */
+      width: 100%;
+      max-width: 100%;
+      box-sizing: border-box;
     }
   }
 </style>
@@ -184,8 +187,9 @@
     <!-- Research Publications Heading -->
     <div class="heading">Research Publications</div>
 
+
     <!-- COVID-19 Research -->
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
+    <table class="research-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
       <tr>
         <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
           <div class="slideshow-container">
@@ -227,7 +231,7 @@
     </table>
 
     <!-- ESCC Research -->
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
+    <table class="research-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
       <tr>
         <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
           <div class="slideshow-container">
@@ -235,12 +239,12 @@
             <img class="mySlides depth" src="images/ESCC_image_2.png" alt="ESCC Research Image 2">
             <img class="mySlides depth" src="images/ESCC_image_3.png" alt="ESCC Research Image 3">
             <img class="mySlides depth" src="images/ESCC_image_4.png" alt="ESCC Research Image 4">
-            <img class="mySlides depth" src="images/ESCC_image_5.png" alt="ESCC Research Image 5">
             <img class="mySlides depth" src="images/ESCC_image_1.png" alt="ESCC Research Image 1">
             <img class="mySlides depth" src="images/ESCC_image_2.png" alt="ESCC Research Image 2">
             <img class="mySlides depth" src="images/ESCC_image_3.png" alt="ESCC Research Image 3">
             <img class="mySlides depth" src="images/ESCC_image_4.png" alt="ESCC Research Image 4">
-            <img class="mySlides depth" src="images/ESCC_image_5.png" alt="ESCC Research Image 5">
+            <img class="mySlides depth" src="images/ESCC_image_1.png" alt="ESCC Research Image 1">
+            <img class="mySlides depth" src="images/ESCC_image_4.png" alt="ESCC Research Image 4">
           </div>
         </td>
         <td style="padding:20px;width:70%;vertical-align:middle">
@@ -266,7 +270,7 @@
     </table>
 
     <!-- Sepsis Research -->
-    <table style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
+    <table class="research-table" style="width:100%;border:0px;border-spacing:0px;border-collapse:separate;">
       <tr>
         <td style="padding:20px;width:30%;max-width:30%;vertical-align:middle">
           <div class="slideshow-container">
@@ -279,7 +283,7 @@
             <img class="mySlides redteam" src="images/Sepsis_image_1.png" alt="Sepsis Research Image 1">
             <img class="mySlides redteam" src="images/Sepsis_image_2.png" alt="Sepsis Research Image 2">
             <img class="mySlides redteam" src="images/Sepsis_image_3.png" alt="Sepsis Research Image 3">
-            <img class="mySlides redteam" src="images/Sepsis_image_1.png" alt="Sepsis Research Image 1">
+            <img class="mySlides redteam" src="images/Sepsis_image_2.png" alt="Sepsis Research Image 2">
           </div>
         </td>
         <td style="padding:20px;width:70%;vertical-align:middle">
@@ -352,7 +356,7 @@
         <td colspan="2">
           <ul class="bullet-point">
             <li>
-              <strong>Sionic AI, Seoul, Korea</strong><br>
+              <strong>AI Research Team, Sionic AI, Seoul, Korea</strong><br>
               AI Research Scientist, 07/2024-Current<br>
               Leading a multimodal LLM research project to optimize AI reasoning and content detection in various file formats, aiming to develop state-of-the-art models for on-premise deployment.
             </li>
