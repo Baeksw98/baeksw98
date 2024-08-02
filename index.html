@@ -6,205 +6,216 @@
   <meta name="author" content="Sangwon Baek">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <link rel="stylesheet" type="text/css" href="stylesheet.css">
-</head>
-<style>
-  /* PC (Default Style) */
-  body {
-    background-color: #f2f2f2; /* Set background to white */
-    color: #030e1c; /* Set text color to black */
-    font-family: Arial, sans-serif;
-    font-size: 14px; /* Set default font size */
-    margin: 0;
-    padding: 0;
-  }
-  a {
-    color: #1c508c;
-    text-decoration: none;
-  }
-  a:hover {
-    text-decoration: underline;
-  }
-  table {
-    width: 100%;
-    max-width: 1200px;
-    border: 0;
-    border-spacing: 0;
-    border-collapse: separate;
-    margin: 0 auto;
-  }
-  td {
-    padding: 15px;
-    vertical-align: middle;
-  }
-  img {
-    width: 350px;
-    height: 350px;
-    object-fit: contain;
-  }
-  .papertitle {
-    font-size: 22px;
-    font-weight: bold;
-  }
-  .heading {
-    font-size: 38px; /* Increased section title size */
-    font-weight: bold; /* Bold font for section titles */
-    text-align: center; /* Center-align section titles */
-    padding-bottom: 10px;
-    margin-top: 15px; /* Add space above the headings */
-  }
-  .bullet-point {
-    margin: 0;
-    padding: 0;
-    list-style: none;
-    font-size: 15px; /* Font size for bullet points in PC */
-  }
-  .bullet-point li {
-    margin-bottom: 10px;
-    font-size: 15px; /* Larger font size for list items */
-  }
-  .slideshow-container {
-    position: relative;
-    max-width: 100%;
-  }
-  .mySlides {
-    display: none;
-    transition: opacity 0.8s ease-in-out; /* Smooth fade effect */
-    opacity: 0; /* Initially invisible */
-  }
-  .mySlides.active {
-    display: block;
-    opacity: 1; /* Make visible with fade-in effect */
-  }
-  .links p {
-    font-size: 20px; /* Larger font size for PC */
-    text-align: center;
-    margin: 0;
-  }
-  .links a {
-    font-size: 20px; /* Larger font size for PC */
-    display: inline-block;
-    margin: 5px 0;
-  }
-  .intro-text {
-    font-size: 18px;
-    text-align: left; 
-    padding: 0 5px; 
-    margin-bottom: 0;
-  }
-  .intro-text p,
-  .intro-text a,
-  .intro-text ol,
-  .intro-text ul,
-  .intro-text li {
-    font-size: 18px; /* Set font size to 18px */
-  }
-  /* Profile photo specific styling */
-  .profile-photo {
-    border: 2px solid #030e1c;
-  }
-  .research-table {
-    width: 100%;
-    max-width: 100%;
-    border: 0;
-    border-spacing: 0;
-    border-collapse: separate;
-  }
-  .research-table td {
-    padding: 15px;
-    vertical-align: top;
-  }
-  .research-table .image-cell,
-  .research-table .content-cell {
-    width: 100%;
-  }
-  .research-table .image-cell {
-    width: 30%;
-  }
-  .research-table .content-cell {
-    width: 70%;
-  }
-.reference-links {
-  font-size: 20px; /* Adjust the size as desired */
-  font-weight: bold; /* Optional: Make the font bold */
-}
-  /* Mobile Styles */
-  @media (max-width: 768px) {
-    body, html {
+
+  <!-- Google tag (gtag.js) -->
+  <script async src="https://www.googletagmanager.com/gtag/js?id=G-FW25JPK571"></script>
+  <script>
+    window.dataLayer = window.dataLayer || [];
+    function gtag(){dataLayer.push(arguments);}
+    gtag('js', new Date());
+
+    gtag('config', 'G-FW25JPK571');
+  </script>
+
+  <style>
+    /* PC (Default Style) */
+    body {
+      background-color: #f2f2f2; /* Set background to white */
+      color: #030e1c; /* Set text color to black */
+      font-family: Arial, sans-serif;
+      font-size: 14px; /* Set default font size */
       margin: 0;
       padding: 0;
-      width: 100%;
-      overflow-x: hidden;
-      font-size: 11px;
     }
-    td, table {
+    a {
+      color: #1c508c;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
+    table {
       width: 100%;
-      max-width: 100%;
-      padding: 0;
-      margin: 0;
-      box-sizing: border-box;
+      max-width: 1200px;
+      border: 0;
+      border-spacing: 0;
+      border-collapse: separate;
+      margin: 0 auto;
+    }
+    td {
+      padding: 15px;
+      vertical-align: middle;
     }
     img {
-      width: 300px; 
-      height: 300px;
-      margin: 0 auto; 
+      width: 350px;
+      height: 350px;
+      object-fit: contain;
+    }
+    .papertitle {
+      font-size: 22px;
+      font-weight: bold;
+    }
+    .heading {
+      font-size: 38px; /* Increased section title size */
+      font-weight: bold; /* Bold font for section titles */
+      text-align: center; /* Center-align section titles */
+      padding-bottom: 10px;
+      margin-top: 15px; /* Add space above the headings */
+    }
+    .bullet-point {
+      margin: 0;
+      padding: 0;
+      list-style: none;
+      font-size: 15px; /* Font size for bullet points in PC */
+    }
+    .bullet-point li {
+      margin-bottom: 10px;
+      font-size: 15px; /* Larger font size for list items */
+    }
+    .slideshow-container {
+      position: relative;
+      max-width: 100%;
+    }
+    .mySlides {
+      display: none;
+      transition: opacity 0.8s ease-in-out; /* Smooth fade effect */
+      opacity: 0; /* Initially invisible */
+    }
+    .mySlides.active {
       display: block;
+      opacity: 1; /* Make visible with fade-in effect */
+    }
+    .links p {
+      font-size: 20px; /* Larger font size for PC */
+      text-align: center;
+      margin: 0;
+    }
+    .links a {
+      font-size: 20px; /* Larger font size for PC */
+      display: inline-block;
+      margin: 5px 0;
     }
     .intro-text {
-      font-size: 12px;
+      font-size: 18px;
       text-align: left; 
       padding: 0 5px; 
-      margin-bottom: 0; 
+      margin-bottom: 0;
     }
-    .links {
-      text-align: center;
-      padding: 0;
-      font-size: 12px; 
+    .intro-text p,
+    .intro-text a,
+    .intro-text ol,
+    .intro-text ul,
+    .intro-text li {
+      font-size: 18px; /* Set font size to 18px */
     }
-    .links p,
-    .links a {
-      font-size: 14px; /* Smaller font size for mobile */
-      padding: 0; 
+    /* Profile photo specific styling */
+    .profile-photo {
+      border: 2px solid #030e1c;
     }
-    .profile-section {
-      text-align: center;
-      padding: 0; 
+    .research-table {
+      width: 100%;
+      max-width: 100%;
+      border: 0;
+      border-spacing: 0;
+      border-collapse: separate;
     }
-    .profile-section p {
-      font-size: 30px; 
-      margin-bottom: 5px;
-    }
-    .research-table tr {
-      display: flex;
-      flex-direction: column;
+    .research-table td {
+      padding: 15px;
+      vertical-align: top;
     }
     .research-table .image-cell,
     .research-table .content-cell {
       width: 100%;
-      padding: 5px;
     }
     .research-table .image-cell {
-      order: 2;
+      width: 30%;
     }
     .research-table .content-cell {
-      order: 1;
+      width: 70%;
     }
-    .slideshow-container {
-      margin-top: 20px;
-    }
-    /* Profile photo specific styling */
-    .profile-photo {
-      width: 200px;
-      height: 200px;
-    }
-    .reference-links {
-      font-size: 14px; /* Adjust the size as desired */
-      font-weight: bold; 
-    }
-    .bullet-point {
-      font-size: 12px; /* Smaller font size for mobile */
-    }
+  .reference-links {
+    font-size: 20px; /* Adjust the size as desired */
+    font-weight: bold; /* Optional: Make the font bold */
   }
-</style>
+    /* Mobile Styles */
+    @media (max-width: 768px) {
+      body, html {
+        margin: 0;
+        padding: 0;
+        width: 100%;
+        overflow-x: hidden;
+        font-size: 11px;
+      }
+      td, table {
+        width: 100%;
+        max-width: 100%;
+        padding: 0;
+        margin: 0;
+        box-sizing: border-box;
+      }
+      img {
+        width: 300px; 
+        height: 300px;
+        margin: 0 auto; 
+        display: block;
+      }
+      .intro-text {
+        font-size: 12px;
+        text-align: left; 
+        padding: 0 5px; 
+        margin-bottom: 0; 
+      }
+      .links {
+        text-align: center;
+        padding: 0;
+        font-size: 12px; 
+      }
+      .links p,
+      .links a {
+        font-size: 14px; /* Smaller font size for mobile */
+        padding: 0; 
+      }
+      .profile-section {
+        text-align: center;
+        padding: 0; 
+      }
+      .profile-section p {
+        font-size: 30px; 
+        margin-bottom: 5px;
+      }
+      .research-table tr {
+        display: flex;
+        flex-direction: column;
+      }
+      .research-table .image-cell,
+      .research-table .content-cell {
+        width: 100%;
+        padding: 5px;
+      }
+      .research-table .image-cell {
+        order: 2;
+      }
+      .research-table .content-cell {
+        order: 1;
+      }
+      .slideshow-container {
+        margin-top: 20px;
+      }
+      /* Profile photo specific styling */
+      .profile-photo {
+        width: 200px;
+        height: 200px;
+      }
+      .reference-links {
+        font-size: 14px; /* Adjust the size as desired */
+        font-weight: bold; 
+      }
+      .bullet-point {
+        font-size: 12px; /* Smaller font size for mobile */
+      }
+    }
+  </style>
+</head>
 <body>
   <div style="max-width: 1200px; margin: 0 auto;">
     <!-- Introductory Section -->
